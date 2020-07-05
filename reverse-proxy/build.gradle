@@ -1,0 +1,14 @@
+plugins {
+    id "io.ratpack.ratpack-groovy" version "1.8.0"
+    id "com.github.johnrengelman.shadow" version "5.2.0"
+    id "groovy"
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "org.codehaus.groovy:groovy-all:${groovy_version}"
+    implementation "ch.qos.logback:logback-classic:1.2.3"
+}

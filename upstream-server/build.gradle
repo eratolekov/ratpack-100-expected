@@ -1,0 +1,18 @@
+plugins {
+    id "groovy"
+    id "application"
+}
+
+mainClassName = 'com.example.App'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "io.undertow:undertow-core:2.0.30.Final"
+
+    implementation "org.codehaus.groovy:groovy-all:${groovy_version}"
+
+    implementation "ch.qos.logback:logback-classic:1.2.3"
+}
